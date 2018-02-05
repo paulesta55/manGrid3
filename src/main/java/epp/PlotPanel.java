@@ -8,7 +8,7 @@ public class PlotPanel extends JPanel {
     private boolean back;
 
     public PlotPanel(){
-        //super();
+        super();
         back=false;
     }
 
