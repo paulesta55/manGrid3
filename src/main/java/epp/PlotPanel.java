@@ -5,18 +5,15 @@ import java.awt.*;
 
 public class PlotPanel extends JPanel {
 
-    private boolean back;
 
     public PlotPanel(){
-        //super();
-        back=false;
+        super();
     }
 
     public void paintComponent(Graphics g){
-        super.paintComponent(g);
-        setBackground(Color.LIGHT_GRAY);
+        super.paintComponent(g);//Très important ! Provoque de nombreux bugs si absent !
+
     }
 
-    public void setBack(boolean t) {this.back=t;}
 
 }
