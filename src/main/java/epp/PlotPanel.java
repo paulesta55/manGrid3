@@ -4,8 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class PlotPanel extends JPanel {
-
-
     public PlotPanel(){
         super();
     }
@@ -14,6 +12,4 @@ public class PlotPanel extends JPanel {
         super.paintComponent(g);//Très important ! Provoque de nombreux bugs si absent !
 
     }
-
-
 }
