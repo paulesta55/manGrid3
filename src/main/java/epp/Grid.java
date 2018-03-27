@@ -153,8 +153,8 @@ public class Grid extends JPanel {
             i += streetWidthY;
 
         }
-        g2.setColor(Color.black);
-        g2.fillOval(vicX - 5, vicY, 10, 10);
+        //g2.setColor(Color.black);
+        //g2.fillOval(vicX - 5, vicY, 10, 10);
         process = new GridProcess(this.matrix, this.iO, this.vicX, this.vicY, this.width, this.height, this.blockSizeW, this.blockSizeH, this.streetWidthX, this.streetWidthY, this.nbBlocks);
         g2.setColor(Color.white);
 
@@ -217,7 +217,7 @@ public class Grid extends JPanel {
                 }
             }
         }
-        g2.setColor(Color.MAGENTA);
+        //g2.setColor(Color.MAGENTA);
         //g2.fillOval(vicX - 5, vicY, 10, 10);
 
     }
