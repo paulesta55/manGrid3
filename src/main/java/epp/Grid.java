@@ -218,7 +218,7 @@ public class Grid extends JPanel {
             }
         }
         g2.setColor(Color.MAGENTA);
-        g2.fillOval(vicX - 5, vicY, 10, 10);
+        //g2.fillOval(vicX - 5, vicY, 10, 10);
 
     }
 
