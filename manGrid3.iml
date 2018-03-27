@@ -8,27 +8,18 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <content url="file://$MODULE_DIR$/../manGrid3">
-      <sourceFolder url="file://$MODULE_DIR$/../manGrid3/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../manGrid3/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../manGrid3/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../manGrid3/target" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Ensea/Projet 2A/jcommon-1.0.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Ensea/Projet 2A/jfreechart-1.0.19.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,16 +28,16 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Ensea/Projet 2A/SEAMCAT_5.2.0_A3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Projet 2A/jcommon-1.0.23.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Ensea/Projet 2A/5.2.0 alpha 3_SEAMCAT 5.2.0 Alpha 3 source code/source/model/target/seamcat-model-5.2.0-alpha-2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Projet 2A/seamcat-model-5.2.0-alpha-2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

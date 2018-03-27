@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660a63b5-7a74-44a5-bd6f-94c48a140d89" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../manGrid3/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" />
-      <change beforePath="$PROJECT_DIR$/../manGrid3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../manGrid3/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/epp/buffPanel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/epp/customChartPanel.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/manGrid3.iml" afterPath="$PROJECT_DIR$/manGrid3.iml" />
+      <change beforePath="$PROJECT_DIR$/manGridNew" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/epp/EppUI.java" afterPath="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" afterPath="$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,35 +22,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="GridProcess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/GridProcess.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/epp/GridProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+            <state relative-caret-position="3003">
+              <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="EppUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/EppUI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="303" column="31" lean-forward="false" selection-start-line="303" selection-start-column="31" selection-end-line="303" selection-end-column="31" />
+            <state relative-caret-position="588">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="53" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3685#3686#0" expanded="true" />
-                <element signature="e#3724#3725#0" expanded="true" />
+                <element signature="method#buildUI#0;class#EppUI#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XYPlotWithZoomableBackgroundImage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java">
+      <file leaf-file-name="customChartPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/epp/customChartPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1554">
+              <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XYPlotWithZoomableBackgroundImage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1092">
+              <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grid.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/epp/Grid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="860">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding>
+                <element signature="e#9808#9809#0" expanded="true" />
+                <element signature="e#9848#9849#0" expanded="true" />
+                <element signature="e#9882#9883#0" expanded="true" />
+                <element signature="e#9920#9921#0" expanded="true" />
+                <element signature="e#9954#9955#0" expanded="true" />
+                <element signature="e#9992#9993#0" expanded="true" />
+                <element signature="e#10043#10044#0" expanded="true" />
+                <element signature="e#10089#10090#0" expanded="true" />
+                <element signature="e#10124#10125#0" expanded="true" />
+                <element signature="e#10158#10159#0" expanded="true" />
+                <element signature="e#10194#10195#0" expanded="true" />
+                <element signature="e#10234#10235#0" expanded="true" />
+                <element signature="e#10270#10271#0" expanded="true" />
+                <element signature="e#10310#10311#0" expanded="true" />
+                <element signature="e#10346#10347#0" expanded="true" />
+                <element signature="e#10390#10391#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,12 +102,26 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>DomainAx</find>
+      <find>zoomI</find>
+      <find>zoomRectangle</find>
+      <find>getPointI</find>
+      <find>orientation</find>
+      <find>getOrientation</find>
+      <find>getP</find>
+      <find>rest</find>
+      <find>setB</find>
+      <find>GridP</find>
+    </findStrings>
+  </component>
   <component name="Git.Rebase.Settings">
     <option name="ONTO" value="refs/heads/Empty_Epp" />
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../manGrid3" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -87,27 +144,39 @@
         <option value="$PROJECT_DIR$/src/epp/EppUIInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/PlotPanel.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/PlotPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/EppUIInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/Epp.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/PlotPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/EppUIInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/buffPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/buffPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/customChartPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/customChartPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
-        <option value="$PROJECT_DIR$/../manGrid3/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" />
       </list>
     </option>
   </component>
@@ -141,10 +210,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="y" value="23" />
+    <option name="width" value="1366" />
+    <option name="height" value="701" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -162,6 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -204,20 +273,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../////////////Program Files/node" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.24382716" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -296,7 +364,7 @@
               <map />
             </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/../manGrid3" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
@@ -373,7 +441,10 @@
       <workItem from="1520344105513" duration="7475000" />
       <workItem from="1520862004046" duration="7769000" />
       <workItem from="1521034585966" duration="771000" />
-      <workItem from="1521549088336" duration="813000" />
+      <workItem from="1521549088336" duration="19496000" />
+      <workItem from="1521657385931" duration="6182000" />
+      <workItem from="1521722170731" duration="2491000" />
+      <workItem from="1522151289998" duration="184000" />
     </task>
     <task id="LOCAL-00001" summary="Version finale Epp + EppUi vide">
       <created>1517848489874</created>
@@ -431,11 +502,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521035207949</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Version finale Epp + EppUi vide">
+      <created>1521550171494</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1521550171494</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76898000" />
+    <option name="totallyTimeSpent" value="104438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,15 +532,15 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5150376" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16136114" sideWeight="0.33674964" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.4849624" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26234907" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26232114" sideWeight="0.6632504" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26673985" sideWeight="0.49570355" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -474,7 +552,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26234907" sideWeight="0.4935553" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26232114" sideWeight="0.46632504" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -517,7 +595,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -526,119 +604,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/SingleValueTypes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ScatterDiagramResultType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/MultiValueDef.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/ValueDefinition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ResultType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/EppUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2772">
-          <caret line="180" column="31" lean-forward="false" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3685#3686#0" expanded="true" />
-            <element signature="e#3724#3725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/Epp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/PlotPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/PlotPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#120#121#0" expanded="false" />
-            <element signature="e#143#144#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/SingleValueTypes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ScatterDiagramResultType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/MultiValueDef.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/ValueDefinition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ResultType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/pom.xml">
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/SingleValueTypes.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ScatterDiagramResultType.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/MultiValueDef.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/ValueDefinition.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ResultType.class" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -646,83 +624,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/EppUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3948">
           <caret line="188" column="10" lean-forward="false" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3685#3686#0" expanded="true" />
-            <element signature="e#3724#3725#0" expanded="true" />
+            <element signature="method#buildUI#0;class#EppUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/Epp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/Epp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/PlotPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/PlotPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#120#121#0" expanded="false" />
-            <element signature="e#143#144#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/EppUIInput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUIInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/SingleValueTypes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ScatterDiagramResultType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/MultiValueDef.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/ValueDefinition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ResultType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/pom.xml">
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/SingleValueTypes.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ScatterDiagramResultType.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/MultiValueDef.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/ValueDefinition.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ResultType.class" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -730,29 +670,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/EppUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="120" column="10" lean-forward="false" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3685#3686#0" expanded="true" />
-            <element signature="e#3724#3725#0" expanded="true" />
+            <element signature="method#buildUI#0;class#EppUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/Epp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/Epp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="69" column="10" lean-forward="false" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/pom.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
@@ -760,128 +697,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/EppUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3843">
           <caret line="231" column="1" lean-forward="false" selection-start-line="231" selection-start-column="1" selection-end-line="231" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3685#3686#0" expanded="true" />
-            <element signature="e#3724#3725#0" expanded="true" />
+            <element signature="method#buildUI#0;class#EppUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/plugin/eventprocessing/PostProcessingUI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ResultType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/MultiValueDef.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/SingleValueTypes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ScatterDiagramResultType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/ValueDefinition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/awt/Insets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="102" column="11" lean-forward="false" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/.idea/vcs.xml">
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/plugin/eventprocessing/PostProcessingUI.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ResultType.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/MultiValueDef.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/SingleValueTypes.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/types/result/ScatterDiagramResultType.class" />
+    <entry file="jar://$PROJECT_DIR$/../Downloads/seamcat-model-5.1.1.jar!/org/seamcat/model/simulation/result/ValueDefinition.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/awt/Insets.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JavaScript-modules-diagram/D:/manGrid3/src">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$/src</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="692.0" y="262.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/jfreechart-1.0.19.jar!/org/jfree/data/xy/XYSeriesCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/java2d/SunGraphics2D.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="2362" column="16" lean-forward="false" selection-start-line="2362" selection-start-column="16" selection-end-line="2362" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/5.2.0 alpha 3_SEAMCAT 5.2.0 Alpha 3 source code/source/model/target/seamcat-model-5.2.0-alpha-2.jar!/org/seamcat/model/simulation/result/Victim.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/5.2.0 alpha 3_SEAMCAT 5.2.0 Alpha 3 source code/source/model/target/seamcat-model-5.2.0-alpha-2.jar!/org/seamcat/model/simulation/result/AntennaResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/5.2.0 alpha 3_SEAMCAT 5.2.0 Alpha 3 source code/source/model/target/seamcat-model-5.2.0-alpha-2.jar!/org/seamcat/model/simulation/result/SystemLink.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/pom.xml">
+    <entry file="uml://JavaScript-modules-diagram/D:/manGrid3/src" />
+    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/jfreechart-1.0.19.jar!/org/jfree/data/xy/XYSeriesCollection.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/java2d/SunGraphics2D.class" />
+    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/5.2.0 alpha 3_SEAMCAT 5.2.0 Alpha 3 source code/source/model/target/seamcat-model-5.2.0-alpha-2.jar!/org/seamcat/model/simulation/result/Victim.class" />
+    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/5.2.0 alpha 3_SEAMCAT 5.2.0 Alpha 3 source code/source/model/target/seamcat-model-5.2.0-alpha-2.jar!/org/seamcat/model/simulation/result/AntennaResult.class" />
+    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/5.2.0 alpha 3_SEAMCAT 5.2.0 Alpha 3 source code/source/model/target/seamcat-model-5.2.0-alpha-2.jar!/org/seamcat/model/simulation/result/SystemLink.class" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -889,87 +736,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/Epp.java">
+    <entry file="jar://$PROJECT_DIR$/../Ensea/Projet 2A/jcommon-1.0.23.jar!/org/jfree/ui/Align.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/buffPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
+        <state relative-caret-position="1590">
+          <caret line="106" column="25" lean-forward="false" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/PlotPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUIInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/Epp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-471">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/EppUIInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/PlotPanel.java">
+    <entry file="jar://$PROJECT_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/org/jfree/chart/plot/CombinedDomainXYPlot.class" />
+    <entry file="jar://$PROJECT_DIR$/../Projet 2A/jcommon-1.0.23.jar!/org/jfree/ui/Align.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/GridProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#120#121#0" expanded="false" />
-            <element signature="e#143#144#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="309" column="20" lean-forward="false" selection-start-line="309" selection-start-column="20" selection-end-line="309" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#9903#9904#0" expanded="false" />
-            <element signature="e#9943#9944#0" expanded="false" />
-            <element signature="e#9977#9978#0" expanded="false" />
-            <element signature="e#10015#10016#0" expanded="false" />
-            <element signature="e#10049#10050#0" expanded="false" />
-            <element signature="e#10087#10088#0" expanded="false" />
-            <element signature="e#10138#10139#0" expanded="false" />
-            <element signature="e#10184#10185#0" expanded="false" />
-            <element signature="e#10219#10220#0" expanded="false" />
-            <element signature="e#10253#10254#0" expanded="false" />
-            <element signature="e#10289#10290#0" expanded="false" />
-            <element signature="e#10329#10330#0" expanded="false" />
-            <element signature="e#10365#10366#0" expanded="false" />
-            <element signature="e#10405#10406#0" expanded="false" />
-            <element signature="e#10441#10442#0" expanded="false" />
-            <element signature="e#10485#10486#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/GridProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+        <state relative-caret-position="3003">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/EppUI.java">
+    <entry file="jar://$PROJECT_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/org/jfree/chart/plot/XYPlot.class" />
+    <entry file="jar://$PROJECT_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/org/jfree/chart/ChartPanel.class" />
+    <entry file="jar://$PROJECT_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/org/jfree/chart/plot/Plot.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="303" column="31" lean-forward="false" selection-start-line="303" selection-start-column="31" selection-end-line="303" selection-end-column="31" />
+        <state relative-caret-position="588">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="53" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3685#3686#0" expanded="true" />
-            <element signature="e#3724#3725#0" expanded="true" />
+            <element signature="method#buildUI#0;class#EppUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../manGrid3/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/customChartPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1554">
+          <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#9808#9809#0" expanded="true" />
+            <element signature="e#9848#9849#0" expanded="true" />
+            <element signature="e#9882#9883#0" expanded="true" />
+            <element signature="e#9920#9921#0" expanded="true" />
+            <element signature="e#9954#9955#0" expanded="true" />
+            <element signature="e#9992#9993#0" expanded="true" />
+            <element signature="e#10043#10044#0" expanded="true" />
+            <element signature="e#10089#10090#0" expanded="true" />
+            <element signature="e#10124#10125#0" expanded="true" />
+            <element signature="e#10158#10159#0" expanded="true" />
+            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#10234#10235#0" expanded="true" />
+            <element signature="e#10270#10271#0" expanded="true" />
+            <element signature="e#10310#10311#0" expanded="true" />
+            <element signature="e#10346#10347#0" expanded="true" />
+            <element signature="e#10390#10391#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -990,7 +855,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Invalid</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1005,7 +870,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.55287355" />
               </list>
             </option>
           </splitter-proportions>
@@ -1017,7 +882,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.55287355" />
               </list>
             </option>
           </splitter-proportions>
@@ -1029,7 +894,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.24382716" />
               </list>
             </option>
           </splitter-proportions>
@@ -1053,7 +918,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.55287355" />
               </list>
             </option>
           </splitter-proportions>
