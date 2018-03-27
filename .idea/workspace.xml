@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660a63b5-7a74-44a5-bd6f-94c48a140d89" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/epp/buffPanel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/epp/customChartPanel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/manGrid3.iml" afterPath="$PROJECT_DIR$/manGrid3.iml" />
-      <change beforePath="$PROJECT_DIR$/manGridNew" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/epp/EppUI.java" afterPath="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" afterPath="$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="GridProcess.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GridProcess.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/GridProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3003">
+            <state relative-caret-position="430">
               <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
               <folding />
             </state>
@@ -47,7 +43,7 @@
       <file leaf-file-name="customChartPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/customChartPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
+            <state relative-caret-position="1659">
               <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -66,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grid.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Grid.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="860">
@@ -444,7 +440,7 @@
       <workItem from="1521549088336" duration="19496000" />
       <workItem from="1521657385931" duration="6182000" />
       <workItem from="1521722170731" duration="2491000" />
-      <workItem from="1522151289998" duration="184000" />
+      <workItem from="1522151289998" duration="505000" />
     </task>
     <task id="LOCAL-00001" summary="Version finale Epp + EppUi vide">
       <created>1517848489874</created>
@@ -509,11 +505,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521550171494</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Version finale Epp + EppUi vide">
+      <created>1522151488126</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522151488126</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104438000" />
+    <option name="totallyTimeSpent" value="104759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,14 +776,6 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/org/jfree/chart/plot/CombinedDomainXYPlot.class" />
     <entry file="jar://$PROJECT_DIR$/../Projet 2A/jcommon-1.0.23.jar!/org/jfree/ui/Align.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/epp/GridProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3003">
-          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/org/jfree/chart/plot/XYPlot.class" />
     <entry file="jar://$PROJECT_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/org/jfree/chart/ChartPanel.class" />
     <entry file="jar://$PROJECT_DIR$/../Projet 2A/jfreechart-1.0.19.jar!/org/jfree/chart/plot/Plot.class" />
@@ -795,21 +790,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/epp/customChartPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/customChartPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1659">
+          <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -835,6 +830,14 @@
             <element signature="e#10346#10347#0" expanded="true" />
             <element signature="e#10390#10391#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/GridProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
