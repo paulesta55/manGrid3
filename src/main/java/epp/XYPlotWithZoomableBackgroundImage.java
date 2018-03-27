@@ -24,6 +24,8 @@ public class XYPlotWithZoomableBackgroundImage extends XYPlot implements Zoomabl
     private Grid grid;
     private int wChartPanel;
     private int hChartPanel;
+    private double xpixelpermeter;
+    private double ypixelpermeter;
     private double init_lowXaxis, init_upXaxis, init_lowYaxis, init_upYaxis;
 
     public XYPlotWithZoomableBackgroundImage(XYDataset dataset,
@@ -55,14 +57,20 @@ public class XYPlotWithZoomableBackgroundImage extends XYPlot implements Zoomabl
         double xrange = 1000.0*(xAxis.getUpperBound()-xAxis.getLowerBound());
         double yrange = 1000.0*(yAxis.getUpperBound()-yAxis.getLowerBound());
         //wChartPanel, hChartPanel (pixel)
-        double xpixelpermeter = wChartPanel/xrange;
-        double ypixelpermeter = hChartPanel/yrange;
+        xpixelpermeter = wChartPanel/xrange;
+        ypixelpermeter = hChartPanel/yrange;
 
         int testvicX = (int)Math.round(wChartPanel*Math.abs(xAxis.getLowerBound())/(xAxis.getUpperBound()-xAxis.getLowerBound()));
         int testvicY = (int)Math.round(hChartPanel*Math.abs(yAxis.getLowerBound())/(yAxis.getUpperBound()-yAxis.getLowerBound()));
+
+
+
         //System.out.println(testvicX+" "+testvicY);
         this.grid=new Grid(inputPanel,xpixelpermeter,ypixelpermeter,(int) testvicX, (int)testvicY);
         grid.repaint();
+
+        System.out.println("victime indoor ? "+this.getEnvironment(testvicX,testvicY));
+
         BufferedImage bi = grid.takeSnapShot();
         setBackgroundImage(bi);
 
@@ -139,6 +147,22 @@ public class XYPlotWithZoomableBackgroundImage extends XYPlot implements Zoomabl
 
             }
         }
+    }
+    /*computes indexes of a point inside the grid matrix */
+    public int[] getPixelPosition(double x, double y){
+        int[] position = new int[2];
+        position[0]=(int)(x*this.xpixelpermeter);
+        position[1]=(int)(y*this.ypixelpermeter);
+        return position;
+    }
+
+    /*returns the environment(outdoor/indoor) of a point inside the grid matrix*/
+    public boolean getEnvironment(int x, int y){
+        if(this.grid.getMatrix()[y][x]!=0){
+            return true;
+        }
+        else
+            return false;
     }
 
 }
