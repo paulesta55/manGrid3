@@ -5,11 +5,6 @@
  */
 package epp;
 
-/**
- * Cette classe est la classe ou on créé la grille une première fois avant de vérifier si elle répond correctement au critère indoor/outdoor
- * @see epp.GridProcess
- * @author Paul Estano
- */
 
 import javafx.scene.chart.ValueAxis;
 
@@ -17,6 +12,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.Random;
+/**
+ * Cette classe est la classe ou on créé la grille une première fois avant de vérifier si elle répond correctement au critère indoor/outdoor
+ * @see epp.GridProcess
+ * @author Paul Estano
+ */
 
 public class Grid extends JPanel {
 
@@ -60,11 +60,11 @@ public class Grid extends JPanel {
      * C'est dans cette classe que la grille est dessinée (dans la méthode paintComponent). La grille est à la fois painte sur le
      * JPanel et stockée dans une matrice. Si elle ne convient pas au paramètre indoor/outdoor fixé par l'utilisateur
      * elle est découpée dans GridProcess. Il faudra trouver un moyen d'automatiser la définition de la dimension de la grille
-     * @param inputPanel
-     * @param xpixelpermeter
-     * @param ypixelpermeter
-     * @param vicX
-     * @param vicY
+     * @param inputPanel permet de récupérer les paramètres utilisateur
+     * @param xpixelpermeter nb pixels/m en X
+     * @param ypixelpermeter nb pixels/m en Y
+     * @param vicX coordonnée de la victime en X
+     * @param vicY nb pixels/m en Y
      */
     public Grid(EppUIInput inputPanel, double xpixelpermeter, double ypixelpermeter, int vicX, int vicY) {
         super();

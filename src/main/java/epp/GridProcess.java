@@ -27,17 +27,17 @@ public class GridProcess {
 
     /**
      *
-     * @param matrix
-     * @param iO
-     * @param VicX
-     * @param VicY
-     * @param width
-     * @param height
-     * @param blockSizeW
-     * @param blockSizeH
-     * @param streetWidthX
-     * @param streetWidthY
-     * @param nbBlocks
+     * @param matrix matrice initiale
+     * @param iO critère indoor/outdoor choisi par l'utilisateur
+     * @param VicX coordonnée de la victime en X
+     * @param VicY coordonnée de la victime en Y
+     * @param width longueur de la grille
+     * @param height largeur de la grille
+     * @param blockSizeW taille d'un bloc en X
+     * @param blockSizeH taille d'un bloc en Y
+     * @param streetWidthX taille des rues en X
+     * @param streetWidthY taille des rues en Y
+     * @param nbBlocks nb de bloc/côté
      */
     public GridProcess(char[][] matrix, boolean iO, int VicX, int VicY, int width, int height, int blockSizeW,
                        int blockSizeH, int streetWidthX, int streetWidthY, int nbBlocks) {
@@ -84,12 +84,12 @@ public class GridProcess {
     }
 
     /*
-    Calcul de la distance en X et en Y entre la cible et la position actuelle (au premier tracé de la grille) de la
-    victime
+
      */
 
     /**
-     *
+     * Calcul de la distance en X et en Y entre la cible et la position actuelle (au premier tracé de la grille) de la
+     * victime
      * @return int[2] la distance delta (en X et en Y d'où l'utilisation d'un tableau) actuelle de la victime par rapport à la position où elle sera après process
      */
     public int[] calculDelta() {

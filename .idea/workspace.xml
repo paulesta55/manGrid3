@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660a63b5-7a74-44a5-bd6f-94c48a140d89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/manGrid3.iml" afterPath="$PROJECT_DIR$/manGrid3.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/epp/Epp.java" afterPath="$PROJECT_DIR$/src/main/java/epp/Epp.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/epp/EppUI.java" afterPath="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/epp/EppUIInput.java" afterPath="$PROJECT_DIR$/src/main/java/epp/EppUIInput.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/epp/Grid.java" afterPath="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" afterPath="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/epp/PlotPanel.java" afterPath="$PROJECT_DIR$/src/main/java/epp/PlotPanel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" afterPath="$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/epp/buffPanel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/epp/customChartPanel.java" afterPath="$PROJECT_DIR$/src/main/java/epp/customChartPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,17 +21,17 @@
       <file leaf-file-name="GridProcess.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/GridProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="107" column="7" lean-forward="false" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+            <state relative-caret-position="777">
+              <caret line="90" column="7" lean-forward="false" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
               <folding>
-                <element signature="e#6152#6153#0" expanded="true" />
-                <element signature="e#6192#6193#0" expanded="true" />
-                <element signature="e#6220#6221#0" expanded="true" />
-                <element signature="e#6252#6253#0" expanded="true" />
-                <element signature="e#6280#6281#0" expanded="true" />
-                <element signature="e#6312#6313#0" expanded="true" />
-                <element signature="e#6520#6521#0" expanded="true" />
-                <element signature="e#6557#6558#0" expanded="true" />
+                <element signature="e#6422#6423#0" expanded="true" />
+                <element signature="e#6462#6463#0" expanded="true" />
+                <element signature="e#6490#6491#0" expanded="true" />
+                <element signature="e#6522#6523#0" expanded="true" />
+                <element signature="e#6550#6551#0" expanded="true" />
+                <element signature="e#6582#6583#0" expanded="true" />
+                <element signature="e#6790#6791#0" expanded="true" />
+                <element signature="e#6827#6828#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +50,8 @@
       <file leaf-file-name="EppUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="35" column="65" lean-forward="true" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+            <state relative-caret-position="2692">
+              <caret line="312" column="7" lean-forward="true" selection-start-line="312" selection-start-column="7" selection-end-line="312" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3336#3337#0" expanded="true" />
@@ -72,8 +64,11 @@
       <file leaf-file-name="EppUIInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUIInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="378">
+              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="21" />
+              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="21" />
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="21" />
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -82,7 +77,7 @@
       <file leaf-file-name="customChartPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/customChartPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1323">
+            <state relative-caret-position="445">
               <caret line="63" column="22" lean-forward="true" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Epp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Epp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/Epp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="94" column="54" lean-forward="false" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+            <state relative-caret-position="462">
+              <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XYPlotWithZoomableBackgroundImage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="XYPlotWithZoomableBackgroundImage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -116,23 +111,23 @@
       <file leaf-file-name="Grid.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/epp/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            <state relative-caret-position="-819">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="e#10779#10780#0" expanded="true" />
-                <element signature="e#10819#10820#0" expanded="true" />
-                <element signature="e#10853#10854#0" expanded="true" />
-                <element signature="e#10891#10892#0" expanded="true" />
-                <element signature="e#10925#10926#0" expanded="true" />
-                <element signature="e#10963#10964#0" expanded="true" />
-                <element signature="e#11014#11015#0" expanded="true" />
-                <element signature="e#11060#11061#0" expanded="true" />
-                <element signature="e#11180#11181#0" expanded="true" />
-                <element signature="e#11214#11215#0" expanded="true" />
-                <element signature="e#11315#11316#0" expanded="true" />
-                <element signature="e#11355#11356#0" expanded="true" />
-                <element signature="e#11459#11460#0" expanded="true" />
-                <element signature="e#11499#11500#0" expanded="true" />
+                <element signature="e#10907#10908#0" expanded="true" />
+                <element signature="e#10947#10948#0" expanded="true" />
+                <element signature="e#10981#10982#0" expanded="true" />
+                <element signature="e#11019#11020#0" expanded="true" />
+                <element signature="e#11053#11054#0" expanded="true" />
+                <element signature="e#11091#11092#0" expanded="true" />
+                <element signature="e#11142#11143#0" expanded="true" />
+                <element signature="e#11188#11189#0" expanded="true" />
+                <element signature="e#11308#11309#0" expanded="true" />
+                <element signature="e#11342#11343#0" expanded="true" />
+                <element signature="e#11443#11444#0" expanded="true" />
+                <element signature="e#11483#11484#0" expanded="true" />
+                <element signature="e#11587#11588#0" expanded="true" />
+                <element signature="e#11627#11628#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,20 +185,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/epp/buffPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/buffPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/PlotPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/PlotPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/PlotPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
@@ -216,12 +200,23 @@
         <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/EppUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/Epp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUIInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/EppUIInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/customChartPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/epp/customChartPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUIInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/EppUIInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/epp/GridProcess.java" />
       </list>
     </option>
   </component>
@@ -515,7 +510,7 @@
       <workItem from="1522236011481" duration="181000" />
       <workItem from="1522624217319" duration="3716000" />
       <workItem from="1522755854588" duration="12051000" />
-      <workItem from="1522771307172" duration="3249000" />
+      <workItem from="1522771307172" duration="4986000" />
     </task>
     <task id="LOCAL-00001" summary="Version finale Epp + EppUi vide">
       <created>1517848489874</created>
@@ -636,11 +631,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522157556941</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Version finale Epp + EppUi vide">
+      <created>1522774582369</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1522774582369</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132390000" />
+    <option name="totallyTimeSpent" value="134127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -653,7 +655,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.49570355" order="6" side_tool="false" content_ui="tabs" />
@@ -669,7 +670,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26673985" sideWeight="0.49570355" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -936,69 +937,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/epp/Grid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        <state relative-caret-position="-819">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#10779#10780#0" expanded="true" />
-            <element signature="e#10819#10820#0" expanded="true" />
-            <element signature="e#10853#10854#0" expanded="true" />
-            <element signature="e#10891#10892#0" expanded="true" />
-            <element signature="e#10925#10926#0" expanded="true" />
-            <element signature="e#10963#10964#0" expanded="true" />
-            <element signature="e#11014#11015#0" expanded="true" />
-            <element signature="e#11060#11061#0" expanded="true" />
-            <element signature="e#11180#11181#0" expanded="true" />
-            <element signature="e#11214#11215#0" expanded="true" />
-            <element signature="e#11315#11316#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
-            <element signature="e#11459#11460#0" expanded="true" />
-            <element signature="e#11499#11500#0" expanded="true" />
+            <element signature="e#10907#10908#0" expanded="true" />
+            <element signature="e#10947#10948#0" expanded="true" />
+            <element signature="e#10981#10982#0" expanded="true" />
+            <element signature="e#11019#11020#0" expanded="true" />
+            <element signature="e#11053#11054#0" expanded="true" />
+            <element signature="e#11091#11092#0" expanded="true" />
+            <element signature="e#11142#11143#0" expanded="true" />
+            <element signature="e#11188#11189#0" expanded="true" />
+            <element signature="e#11308#11309#0" expanded="true" />
+            <element signature="e#11342#11343#0" expanded="true" />
+            <element signature="e#11443#11444#0" expanded="true" />
+            <element signature="e#11483#11484#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11627#11628#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="35" column="65" lean-forward="true" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3336#3337#0" expanded="true" />
-            <element signature="e#3375#3376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUIInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/epp/GridProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="107" column="7" lean-forward="false" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+        <state relative-caret-position="777">
+          <caret line="90" column="7" lean-forward="false" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
           <folding>
-            <element signature="e#6152#6153#0" expanded="true" />
-            <element signature="e#6192#6193#0" expanded="true" />
-            <element signature="e#6220#6221#0" expanded="true" />
-            <element signature="e#6252#6253#0" expanded="true" />
-            <element signature="e#6280#6281#0" expanded="true" />
-            <element signature="e#6312#6313#0" expanded="true" />
-            <element signature="e#6520#6521#0" expanded="true" />
-            <element signature="e#6557#6558#0" expanded="true" />
+            <element signature="e#6422#6423#0" expanded="true" />
+            <element signature="e#6462#6463#0" expanded="true" />
+            <element signature="e#6490#6491#0" expanded="true" />
+            <element signature="e#6522#6523#0" expanded="true" />
+            <element signature="e#6550#6551#0" expanded="true" />
+            <element signature="e#6582#6583#0" expanded="true" />
+            <element signature="e#6790#6791#0" expanded="true" />
+            <element signature="e#6827#6828#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,9 +983,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2692">
+          <caret line="312" column="7" lean-forward="true" selection-start-line="312" selection-start-column="7" selection-end-line="312" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3375#3376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/EppUIInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="21" />
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="21" />
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="21" />
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/epp/customChartPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
+        <state relative-caret-position="445">
           <caret line="63" column="22" lean-forward="true" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1022,11 +1018,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/epp/Epp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="94" column="54" lean-forward="false" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+        <state relative-caret-position="462">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/epp/XYPlotWithZoomableBackgroundImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>

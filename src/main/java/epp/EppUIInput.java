@@ -6,9 +6,11 @@ import org.seamcat.model.plugin.Config;
  * Cette interface correspond à une IHM dans laquelle l'utilisateur peut choisir les différents paramètres du
  * post processing.
  * Ici :
- * _la position de la victime
- * _la largeur des rues
- * _le nombre de blocks
+ * <ul>
+ *     <li>la position de la victime</li>
+ *     <li>la largeur des rues</li>
+ *     <li>le nombre de blocks</li>
+ * </ul>
  * @author Paul Estano
  */
 public interface EppUIInput{
