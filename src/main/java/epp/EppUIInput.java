@@ -2,14 +2,16 @@ package epp;
 
 import org.seamcat.model.plugin.Config;
 
+/**
+ * Cette interface correspond à une IHM dans laquelle l'utilisateur peut choisir les différents paramètres du
+ * post processing.
+ * Ici :
+ * _la position de la victime
+ * _la largeur des rues
+ * _le nombre de blocks
+ * @author Paul Estano
+ */
 public interface EppUIInput{
-    /*Cette interface correspond à une IHM dans laquelle l'utilisateur peut choisir les différents paramètres du
-    post processing.
-    Ici :
-    _la position de la victime
-    _la largeur des rues
-    _le nombre de blocks
-     */
     enum VLT_position {Outdoor,Indoor}
 
     @Config(order = 1, name = "Select VLT_Position")//cette annotation permet de créer un bouton pour l'IHM

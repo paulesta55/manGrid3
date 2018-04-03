@@ -8,14 +8,20 @@ import java.awt.Color;
 import java.awt.Dimension;
 
 /**
- * Created by placisadmin on 06/12/2016.
+ * ChartPanel permettant de mettre un background sur lequel on peut zoomer
+ * @author placisadmin
  */
 
 public class customChartPanel extends ChartPanel{
     private JFreeChart chart;
     private int wChart,hChart;
 
-
+    /**
+     *
+     * @param chart conteneur du graphique
+     * @param w longeur du graphique
+     * @param h largeur du graphique
+     */
     public customChartPanel(JFreeChart chart, int w, int h)
     {
         this(chart,
@@ -37,6 +43,26 @@ public class customChartPanel extends ChartPanel{
 
     }
 
+    /**
+     * Cette méthode créé le conteneur du graphique :
+     * <ul>
+     *     <li>elle chosit les points à afficher et leur couleur</li>
+     *     <li>elle met le graphique à la bonne taille</li>
+     * </ul>
+     * @param chart graphique
+     * @param width longueur du graphique
+     * @param height largeur du graphique
+     * @param minimumDrawWidth
+     * @param minimumDrawHeight
+     * @param maximumDrawWidth
+     * @param maximumDrawHeight
+     * @param useBuffer
+     * @param properties
+     * @param save
+     * @param print
+     * @param zoom
+     * @param tooltips
+     */
     public customChartPanel(JFreeChart chart,
                             int width, int height,
                             int minimumDrawWidth, int minimumDrawHeight,

@@ -18,12 +18,26 @@ import org.seamcat.model.types.result.DescriptionImpl;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Ici on récupère les données de la simulation en implémentant EventProcessingPlugin et on indique les interfaces
+ * graphiques utilisées (ici EppUI) en implémentant PostProcessingTab
+ * @see org.seamcat.model.plugin.eventprocessing.PostProcessingTab
+ * @see org.seamcat.model.plugin.eventprocessing.EventProcessingPlugin
+ * @author Paul Estano
+ */
 
 
 public class Epp implements EventProcessingPlugin<Epp.Input>,PostProcessingTab {
 
+    /**
+     * à implémenter pour récupérer les positions des différents points (VLR,VLT, ILR, ILT en X et en Y)
+     * @param scenario
+     * @param eventResult
+     * @param input
+     * @param resultCollector
+     */
     public void evaluate(Scenario scenario, EventResult eventResult, Input input, Collector resultCollector )
-    {
+    {//on récupère les résultats
         for (InterferenceLink link : scenario.getInterferenceLinks()) {
 
 
@@ -33,10 +47,6 @@ public class Epp implements EventProcessingPlugin<Epp.Input>,PostProcessingTab {
             resultCollector.add(Input.VLRY,victimResult.rxAntenna().getPosition().getY());
             resultCollector.add(Input.VLTX,victimResult.txAntenna().getPosition().getX());
             resultCollector.add(Input.VLTY,victimResult.txAntenna().getPosition().getY());
-
-
-            // System.out.println("x="+victimResult.rxAntenna().getPosition().getX());
-            // System.out.println("y="+victimResult.rxAntenna().getPosition().getY());
 
 
             for (int i = 0; i < eventResult.getInterferenceLinkResult(link).size(); i++) {
@@ -52,12 +62,24 @@ public class Epp implements EventProcessingPlugin<Epp.Input>,PostProcessingTab {
         }
 
     }
+
+    /**
+     * Inutile (pour l'instant...)
+     * @param context
+     * @param input
+     * @param validator
+     */
     @Override
     public void consistencyCheck(ConsistencyCheckContext context, Input input, Validator validator){}
+
+    /**
+     *
+     * @return le nom et la description du plugin
+     */
     public Description description(){
         return new DescriptionImpl("Manhattan Grid","grille de manhattan");
-    }
-    public interface Input{
+    }//descripton du plugin (observable quand on sélectionne le plugin comme "Event Processing" pour la simulation
+    public interface Input{//on définit les variables où seront stockés les résultats
         VectorDef VLRX = Factory.results().value("VLR position X","km");
         VectorDef VLRY = Factory.results().value("VLR position Y","km");
         VectorDef VLTX = Factory.results().value("VLT position X","km");
@@ -67,6 +89,11 @@ public class Epp implements EventProcessingPlugin<Epp.Input>,PostProcessingTab {
         VectorDef ILTX = Factory.results().value("ILT position X","km");
         VectorDef ILTY = Factory.results().value("ILT position Y","km");
     }
+
+    /**
+     *
+     * @return les interfaces utilisées dans le plugin
+     */
     @Override
     public List<Class<? extends PostProcessingUI>> tabs() {
         List<Class<? extends PostProcessingUI>> tabs = new ArrayList<>();

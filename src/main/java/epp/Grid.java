@@ -6,7 +6,9 @@
 package epp;
 
 /**
- * @author ensea
+ * Cette classe est la classe ou on créé la grille une première fois avant de vérifier si elle répond correctement au critère indoor/outdoor
+ * @see epp.GridProcess
+ * @author Paul Estano
  */
 
 import javafx.scene.chart.ValueAxis;
@@ -32,7 +34,6 @@ public class Grid extends JPanel {
     private int vicX;
     private int vicY;
     private boolean iO;
-    private boolean paintMatrix = false;
     private char[][] matrix = new char[height][width];
     private Random r = new Random();
     private Color color;
@@ -50,6 +51,21 @@ public class Grid extends JPanel {
     private int nColor;
     private GridProcess process;
 
+
+    /*
+
+     */
+
+    /**
+     * C'est dans cette classe que la grille est dessinée (dans la méthode paintComponent). La grille est à la fois painte sur le
+     * JPanel et stockée dans une matrice. Si elle ne convient pas au paramètre indoor/outdoor fixé par l'utilisateur
+     * elle est découpée dans GridProcess. Il faudra trouver un moyen d'automatiser la définition de la dimension de la grille
+     * @param inputPanel
+     * @param xpixelpermeter
+     * @param ypixelpermeter
+     * @param vicX
+     * @param vicY
+     */
     public Grid(EppUIInput inputPanel, double xpixelpermeter, double ypixelpermeter, int vicX, int vicY) {
         super();
 
@@ -86,6 +102,10 @@ public class Grid extends JPanel {
         */
     }
 
+    /**
+     * Cette méthode trace la grille.
+     * @param g
+     */
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
@@ -104,7 +124,6 @@ public class Grid extends JPanel {
         int k = 0;
 
         int c = 0;
-        //paintMatrix permet de controler le remplissage de la matrice : pour paintMatrix =  false on crée une nouvelle matrice
         for (i = 0; i < this.height; i++) {
             for (j = 0; j < this.width; j++) {
                 matrix[i][j] = '0';
@@ -135,7 +154,7 @@ public class Grid extends JPanel {
                         c += 1;
                         k += buildingX;
                     }
-                    buildingX = blockSizeW - k;
+                    buildingX = blockSizeW - k;//La taille en abscisse du dernier building dépend de la place restante dans le bloc
                     choiceColor();
                     g2.setColor(this.color);
                     g2.fillRect(j, i, buildingX, buildingY);
@@ -155,11 +174,16 @@ public class Grid extends JPanel {
         }
         //g2.setColor(Color.black);
         //g2.fillOval(vicX - 5, vicY, 10, 10);
-        process = new GridProcess(this.matrix, this.iO, this.vicX, this.vicY, this.width, this.height, this.blockSizeW, this.blockSizeH, this.streetWidthX, this.streetWidthY, this.nbBlocks);
+        process = new GridProcess(this.matrix, this.iO, this.vicX, this.vicY, this.width, this.height,
+                this.blockSizeW, this.blockSizeH, this.streetWidthX, this.streetWidthY, this.nbBlocks);
+        /*
+        On test si la victime est dans le bon environnement tel que défini par l'utilisateur. Sinon on redécoupe la grille
+        dans gridPrcess
+         */
         g2.setColor(Color.white);
 
         //pour paintMatrix = true on affiche la matrice à la place du dessin initial
-        if (process.getStateProcess() == true) {
+        if (process.getStateProcess() == true) {//On test si la grille a été modifiée dans gridProcess. Si oui on la retrace dans le JPanel
             this.removeAll();
             for (i = 0; i < height; i++) {
                 for (j = 0; j < width; j++) {
@@ -290,21 +314,30 @@ public class Grid extends JPanel {
         this.streetWidth = streetWidth;
     }
 
+    /**
+     *
+     * @return la matrice de la grille (tableau de caractères
+     */
     public char[][] getMatrix() {
         return this.matrix;
     }
 
+    /**
+     *
+     * @return taille des rues (int) en X
+     */
     public int getStreetWidthX() {
         return this.streetWidthX;
     }
 
+    /**
+     *
+     * @return la taille des rues (int) en Y
+     */
     public int getStreetWidthY() {
         return this.streetWidthY;
     }
 
-    public void setPaintMatrix() {
-        paintMatrix = !(paintMatrix);
-    }
 
     public BufferedImage takeSnapShot() {
         this.setSize(this.width, this.height);

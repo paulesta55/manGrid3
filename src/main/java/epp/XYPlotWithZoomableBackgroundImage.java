@@ -1,8 +1,5 @@
 package epp;
 
-/**
- * Created by placisadmin on 28/02/2017.
- */
 
 import org.jfree.chart.axis.ValueAxis;
 import org.jfree.chart.plot.XYPlot;
@@ -16,6 +13,10 @@ import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 
+/**
+ * Cette classe gère l'image en background du graphique et en particulier le zoom sur cette image.
+ * @author placisadmin
+ */
 
 public class XYPlotWithZoomableBackgroundImage extends XYPlot implements Zoomable
 {
@@ -28,6 +29,19 @@ public class XYPlotWithZoomableBackgroundImage extends XYPlot implements Zoomabl
     private double ypixelpermeter;
     private double init_lowXaxis, init_upXaxis, init_lowYaxis, init_upYaxis;
 
+    /**
+     *
+     * @param dataset
+     * @param inputPanel
+     * @param wChartPanel
+     * @param hChartPanel
+     * @param vicX
+     * @param vicY
+     * @param domainAxis
+     * @param rangeAxis
+     * @param renderer
+     * @param zoomableBackgroundImage
+     */
     public XYPlotWithZoomableBackgroundImage(XYDataset dataset,
                                              EppUIInput inputPanel,
                                              int wChartPanel,
@@ -148,7 +162,13 @@ public class XYPlotWithZoomableBackgroundImage extends XYPlot implements Zoomabl
             }
         }
     }
-    /*computes indexes of a point inside the grid matrix */
+
+    /**
+     *
+     * @param x
+     * @param y
+     * @return indexes of a point inside the grid matrix
+     */
     public int[] getPixelPosition(double x, double y){
         int[] position = new int[2];
         position[0]=(int)(x*this.xpixelpermeter);
@@ -156,7 +176,13 @@ public class XYPlotWithZoomableBackgroundImage extends XYPlot implements Zoomabl
         return position;
     }
 
-    /*returns the environment(outdoor/indoor) of a point inside the grid matrix*/
+
+    /**
+     *
+     * @param x
+     * @param y
+     * @return the environment(outdoor/indoor) of a point inside the grid matrix
+     */
     public boolean getEnvironment(int x, int y){
         if(this.grid.getMatrix()[y][x]!=0){
             return true;

@@ -47,7 +47,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../5.2.0 alpha 3_SEAMCAT 5.2.0 Alpha 3 source code/source/model/target/seamcat-model-5.2.0-alpha-2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../SEAMCAT_5.2.0_MODEL.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

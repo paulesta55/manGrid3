@@ -2,8 +2,11 @@
 package epp;
 
 /**
- *
- * @author ensea
+ * Cette classe est appelée une fois que la grille a été créée une première fois, elle permet à la fois de contrôler que
+ * la victime est au bon endroit (indoor ou outdoor) et modifie la grille sinon, pour quelle réponde correctement à ce
+ * paramètre.
+ * @see epp.Grid
+ * @author Paul Estano
  */
 
 public class GridProcess {
@@ -16,19 +19,29 @@ public class GridProcess {
     private int vicY;
     private int xTar;
     private int yTar;
-    /*private int pasX;
-    private int pasY;*/
-    //private Grid oldGrid;
     private int height;
     private int width;
     private int[] delta = new int[2];
     private char[][] oldMatrix;
     private int blockSizeW, blockSizeH, streetWidthX, streetWidthY, nbBlocks;
 
+    /**
+     *
+     * @param matrix
+     * @param iO
+     * @param VicX
+     * @param VicY
+     * @param width
+     * @param height
+     * @param blockSizeW
+     * @param blockSizeH
+     * @param streetWidthX
+     * @param streetWidthY
+     * @param nbBlocks
+     */
     public GridProcess(char[][] matrix, boolean iO, int VicX, int VicY, int width, int height, int blockSizeW,
                        int blockSizeH, int streetWidthX, int streetWidthY, int nbBlocks) {
 
-        //this.oldGrid = oldGrid;
         this.nbBlocks = nbBlocks;
 
         this.iO = iO;
@@ -58,6 +71,9 @@ public class GridProcess {
 
     }
 
+    /**
+     * Calcul des coordonnées de la cible sur laquelle on veut positionner la victime
+     */
     private void calculTar() {
         yTar = (nbBlocks / 2) * (streetWidthY + blockSizeH) + streetWidthY + this.blockSizeH / 2;
         if (iO == true) {
@@ -67,6 +83,15 @@ public class GridProcess {
         }
     }
 
+    /*
+    Calcul de la distance en X et en Y entre la cible et la position actuelle (au premier tracé de la grille) de la
+    victime
+     */
+
+    /**
+     *
+     * @return int[2] la distance delta (en X et en Y d'où l'utilisation d'un tableau) actuelle de la victime par rapport à la position où elle sera après process
+     */
     public int[] calculDelta() {
         if (iO == false) {
             delta[0] = xTar - (vicX);
@@ -77,7 +102,13 @@ public class GridProcess {
         }
         return delta;
     }
-    public void copyMatrixPartLR() {
+
+    /**
+     * la grille est modifiée dans cette fonction :
+     * on découpe d'abord delta (en X et en Y) de l'image puis on translate le bout central après quoi on "recolle"
+     * les morceaux découpés
+     */
+    public void copyMatrixPartLR() {//la grille est découpée et modifiée ici
         int k = 0;
         for (int j = 0; j < width - 1; j++) {//gestion des parties hautes et basses de la matrice
             k=0;
@@ -140,6 +171,11 @@ public class GridProcess {
     }
     //On utilisera copyArea et clearArea
 
+    /**
+     *
+     * @return booleen qui indique si la grille va subir un process (ie si oui ou non la victime est au bon endroit
+     * (indoor ou outdoor)
+     */
     public boolean getStateProcess() {
         return this.stateProcess;
     }
@@ -152,6 +188,10 @@ public class GridProcess {
         return this.yTar;
     }
 
+    /**
+     *
+     * @return le tableau char[][] de la matrice après qu'elle ait été transformé pour que la victime soit positionné au bon endroit sur la grille
+     */
     public char[][] getNewMatrix() {
         return this.newMatrix;
     }

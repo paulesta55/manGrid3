@@ -25,16 +25,27 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 
 import java.awt.image.*;
 
-
+/**
+ * Cette Interface permet d'ajouter un environnement graphique au plugin. C'est ici qu'on affiche la grille
+ * 3 méthodes sont à implémenter obligatoirement :
+ * -BuildUI
+ * -getTitle
+ * -panelDefinition
+ * l'annotation @PostProcessing permet de définir un bouton qui déclenche la méthode qu'elle précède
+ * @author Paul Estano
+ * @see org.seamcat.model.plugin.eventprocessing.PostProcessingUI
+ */
 public class EppUI extends JFrame implements PostProcessingUI {
     private Panels panels;
     private JSplitPane split;
-    private PlotPanel plotPanel = new PlotPanel();
+    private PlotPanel plotPanel = new PlotPanel(new BorderLayout());
     private XYPlot gridXYplot = new XYPlot();
     private XYDataset results;
     private JFreeChart gridChart;
     private ChartPanel gridPanel;
     private EppUIInput inputPanel;
+    private JLabel gridLabel = new JLabel("Manhattan Grid");
+    private JLabel gridLegend = new JLabel("Number of floors");
     private double[] vectorVLR_X;
     private double[] vectorVLR_Y;
     private double[] vectorVLT_X;
@@ -48,19 +59,22 @@ public class EppUI extends JFrame implements PostProcessingUI {
     private double x_size, y_size;
     private double vicX,vicY;
     private GridBagLayout gridBagLayout = new GridBagLayout();
-
+    private int maxFloor = 10;
     //IL FAUT TROUVER UN MOYEN D'ADAPTER LA FENETRE AUTOMATIQUEMENT.
     private int wChartPanel=500;
     private int hChartPanel=500;
 
-
+    /**
+     * Cette méthode construit l'IHM en assemblant à la fois des panels statiques et les panels dynamiques créé après l'appuie sur
+     * un bouton postProcessing(Cf plus loin)
+     * Ici plotPanel est un contenu "dynamique" et Paramètres correspond à l'interface EppUIInput implémenté tel que le
+     * demande Seamcat (Cf EppUIInput)
+     * @param scenario
+     * @param canvas
+     * @param panels
+     */
     public void buildUI(Scenario scenario, JPanel canvas, Panels panels) {
-        /*
-        Cette méthode construit l'IHM en assemblant à la fois des panels statiques et les panels dynamiques créé après l'appuie sur
-        un bouton postProcessing(Cf plus loin)
-        Ici plotPanel est un contenu "dynamique" et Paramètres correspond à l'interface EppUIInput implémenté tel que le
-        demande Seamcat (Cf EppUIInput)
-         */
+
         this.panels = panels;
         split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
         split.add(panels.get("Paramètres").getPanel());
@@ -69,10 +83,22 @@ public class EppUI extends JFrame implements PostProcessingUI {
         canvas.add(split, BorderLayout.CENTER);
     }
 
+    /**
+     * Renvoie le titre à afficher sur l'onglet de la fenêtre
+     * @return le titre de la fenêtre
+     */
     public String getTitle() {
         return "Manhattan Grid";
     }
 
+    /**
+     * Cette méthode sert à ajouter à la fenêtre une interface ou l'utilisateurs fourni les données nécessaire au process.
+     * On pourra ensuite les récupérer pour effectuer nos opérations.
+     * Cette interface doit être impérativement défini en tant que telle (cf EppUIInput)
+     * On les récupère grace à la méthode get("Nom du panel").getModel qu'on applique sur panels (argument de la méthode
+     * buildUI
+     * @return le panneau de paramètres d'entrée pour le post processing
+     */
     public PanelDefinition[] panelDefinitions() {
         return new PanelDefinition[]{
                 new PanelDefinition<EppUIInput>("Paramètres", EppUIInput.class)
@@ -103,10 +129,14 @@ public class EppUI extends JFrame implements PostProcessingUI {
 
     }
 
+    /**
+     * Cette annotation crée le bouton "Plot" qui va déclencher le "post processing".
+     * Ici le post processing déclenche la méthode preparePlot.
+     * @param scenario
+     * @param results
+     * @param input
+     */
     @PostProcessing(order = 2, name = "Plot")
-    /*Cette annotation crée le bouton "Plot" qui va déclencher le "post processing".
-    Ici le post processing déclenche la méthode preparePlot.
-    */
     public void preparePlot(Scenario scenario, Results results, Epp.Input input) {
         //plotPanel.setBack(true);
         //plotPanel.repaint();
@@ -172,71 +202,115 @@ public class EppUI extends JFrame implements PostProcessingUI {
         plot(scenario);
     }
 
-
+    /**
+     * Ici est créé le contenu dynamique ajouté au split dans la méthode buildUI.
+     * Ce contenu est placé dans un JPanel customisé (Cf class PlotPanel) qui est lui-même ajouté au plit de la méthode buildUI
+     * On utilise le gridBaglayout par facilité d'utilisation
+     * @param scenario
+     */
     private void plot(Scenario scenario) {
-        /*
-        Ici est créé le contenu dynamique ajouté au split dans la méthode buildUI.
-        Ce contenu est placé dans un JPanel customisé (Cf class PlotPanel) qui est lui-même ajouté au plit de la méthode buildUI
-        On utilise le gridBaglayout par facilité d'utilisation
-         */
 
+        int red, green, blue;
         plotPanel.removeAll();
-
         results = createDataset();
-
         gridXYplot.setDataset(results);//crée les données à afficher sur la grille
-        gridChart = ChartFactory.createScatterPlot("Manhattan Grid","axis x","axis y",results);
-
-        gridPanel = new ChartPanel(gridChart);
-        gridPanel.setOpaque(false);
-        gridChart.setBackgroundPaint(null);
-        gridChart.getPlot().setBackgroundPaint(null);
-        gridChart.getLegend().setBackgroundPaint(new Color(200, 200, 200, 100));
-        gridChart.getTitle().setPaint(Color.white);
-
-        JLabel label = new JLabel("Hello World!");
-        label.setHorizontalAlignment(JLabel.CENTER);
-        label.setVerticalAlignment(JLabel.CENTER);
-        label.setForeground(Color.yellow);
-        label.setOpaque(false);
-
-        gridChart.setBorderVisible(true);
-
-        NumberAxis xAxis=new NumberAxis("X Distance (km)");
-        NumberAxis yAxis=new NumberAxis("Y Distance (km)");
-        XYItemRenderer itemrenderer = new XYLineAndShapeRenderer(true,false);
-
         /*
         On peut ensuite utiliser un XYplot sur lequel on applique backgroundImage en fond à l'aide de
         de setBackgroundImage (hérité de plot et utilisé dans customChartPanel)
         JFreeChart correspond au graphe en lui-même qui ne peut être créé que si myplot a été initialisé (sans backgroundimage)
         customChartPanel correspond au conteneur du graphe
         */
+        plotPanel.setLayout(gridBagLayout);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 500;
+        gbc.fill = GridBagConstraints.NONE;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.insets = new Insets(0, 0, 0, 0);
+        plotPanel.add(gridLabel,gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.gridwidth = 2;
+        plotPanel.add(gridLegend,gbc);
+
+        gbc.gridwidth = 1;
+        gbc.gridheight = 100;
+        gbc.ipady = 0;
+        gbc.ipadx = 0;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+
+        plotPanel.setLayout(gridBagLayout);
+        NumberAxis xAxis=new NumberAxis("X Distance (km)");
+        NumberAxis yAxis=new NumberAxis("Y Distance (km)");
+        XYItemRenderer itemrenderer = new XYLineAndShapeRenderer(true,false);
+
         final XYPlotWithZoomableBackgroundImage myplot = new XYPlotWithZoomableBackgroundImage((XYDataset)results,inputPanel,wChartPanel,hChartPanel,vicX,vicY,
                 xAxis, yAxis, itemrenderer, true);// final
         JFreeChart chart = new JFreeChart("Manhattan Grid for SEAMCAT", JFreeChart.DEFAULT_TITLE_FONT, myplot, true);
+
         customChartPanel chartPanel = new customChartPanel(chart,wChartPanel,hChartPanel);
 
-        plotPanel.add(chartPanel);
+        System.out.println("ILRx[1]="+this.vectorILR_X[1]+" ILRy[1]="+this.vectorILR_Y[1]);
+        System.out.println("ILR[1] indoor ? "+myplot.getEnvironment(myplot.getPixelPosition(this.vectorILR_X[1],
+                this.vectorILR_Y[1])[0],myplot.getPixelPosition(this.vectorILR_X[1],this.vectorILR_Y[1])[1]));
+        plotPanel.add(chartPanel,gbc);
         plotPanel.revalidate();
         plotPanel.repaint();
 
-        GridBagLayout gridBagLayout = new GridBagLayout();
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.fill = GridBagConstraints.CENTER;
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.weightx = 1;
-        plotPanel.setLayout(gridBagLayout);
-        gbc.fill = GridBagConstraints.CENTER;
-        gbc.gridx = 1;
-        gbc.gridy = 0;
-        gbc.weightx = 2;
-        plotPanel.revalidate();
-        plotPanel.repaint();
+
+        gbc.gridheight=1;
+
+
+        /*
+        création du dégradé pour la couleur
+         */
+
+        for(int i=0; i<100; i++){
+            gbc.gridy = i+1;
+            gbc.gridx = 1;
+            gbc.insets = new Insets(0, 40, 0, 0);
+            if(i<=100/2){
+                red=(int)(255-i*255*2.0/100);
+                green=(int)(i*255*2.0/100);
+                blue=0;
+            }
+            else{
+                green=(int)(255*2-i*255*2.0/100);
+                blue=(int)(i*255.0/100);
+                red=0;
+            }
+            System.out.println("red="+red+" green="+green+" blue="+blue);
+            JPanel legendPanel = new JPanel();
+            legendPanel.setMaximumSize(new Dimension(50,50/(maxFloor+1)));
+            legendPanel.setMinimumSize(new Dimension(50,50/(maxFloor+1)));
+            legendPanel.setPreferredSize(new Dimension(50,50/(maxFloor+1)));
+            legendPanel.setBackground(new Color(red,green,blue));
+            System.out.println(legendPanel.getBackground());
+            plotPanel.add(legendPanel, gbc);
+        }
+
+        gbc.insets = new Insets(0, 10, 0, 0);
+        //gbc.gridheight = 2;
+        /*
+        On met le numéro des étages en face de la couleur correspondante
+         */
+        gbc.gridheight = 1;
+        for(int i=0; i<=maxFloor; i++){
+            gbc.gridx = 2;
+            gbc.gridy = i*100/maxFloor+1;
+            plotPanel.add(new JLabel(String.valueOf(maxFloor-i)), gbc);
+        }
+
 
     }
 
+    /*
+    on met les données sous une forme plus exploitable
+     */
     private XYDataset createDataset() {
         int length_VLRX = vectorVLR_X.length;
         System.out.println("nb of events: " + length_VLRX);
